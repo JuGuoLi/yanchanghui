@@ -1,0 +1,492 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+div#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  zoom: 1;
+  opacity:1;
+  transition: opacity 1s linear;
+}
+#about_us{
+  width:100%;
+  position:absolute;
+  top:30%;
+  text-align:center;
+}
+#about_us h1,#about_us h2,#about_us p{
+  color:#95dbfd;
+}
+#about_us ul{
+  list-style:none;
+  position:relative;
+  left:30%;
+}
+#about_us ul li{
+  float:left;
+  margin-left:8rem;
+}
+#about_us img{
+  width:200px;
+  height:200px;
+  margin:20px 0px;
+}
+#about_us ul li h2{
+  transition:1s;
+}
+#about_us ul li h2:hover{
+  color:white;
+  cursor:default;
+}
+.video_play{	
+  position:relative;
+  z-index:1;
+}
+.video_play>video{
+	position:absolute;
+	top:0px;
+	width:100%;
+  height:auto;
+  z-index:2;
+}
+#index_page1{
+  position:relative;
+  top:5%;
+  z-index:10;
+}
+#index_page1 ul{
+  margin-left:250px;
+  list-style:none;
+}
+#index_page1 ul li a{
+  display: inline-block;
+  text-decoration:none;
+  font-size:60px;
+  font-weight: bold;
+  color:rgb(233,215,50);
+  transition:1s;
+}
+#index_page1 ul li a:hover{
+  color:red;
+  transform: translateX(100px);
+}
+#index_page1 ul li:nth-child(2){
+  margin-left:-100px;
+}
+#index_page1 ul li:nth-child(3){
+  margin-left:-200px;
+}
+.index_div_active{
+  width:1000px;
+  height:500px;
+  background:white;
+  position:absolute;
+  top:150px;
+  left:25%;
+  z-index:20;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.index_div_active span{
+  font-size:20px;
+}
+.index_detail{
+  width:1000px;
+  height:500px;
+}
+.hidden{
+  display:none;
+}
+.dowebok {
+  height:450px !important;
+  position:relative;
+  top:15%;
+  background-color:transparent !important;
+}
+.dowebok img {
+   margin-left: 10px;
+   vertical-align: top;
+   height:450px;
+}
+/*Plugin CSS*/
+.str_wrap {
+	overflow:hidden;
+	zoom:1;
+	width:100%;
+	font-size:12px;
+	line-height:16px;
+	position:relative;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;  
+	background:#f6f6f6;
+	white-space:nowrap;
+}
+
+.str_wrap.str_active {
+	background:#f1f1f1;
+}
+.str_move { 
+	white-space:nowrap;
+	position:absolute; 
+	top:0; 
+	left:0;
+	cursor:move;
+}
+.str_move_clone {
+	display:inline-block;
+	display:inline;
+	zoom:1;
+	vertical-align:top;
+	position:absolute; 
+	left:100%;
+	top:0;
+}
+.str_vertical .str_move_clone {
+	left:0;
+	top:100%;
+}
+.str_down .str_move_clone {
+	left:0;
+	bottom:100%;
+}
+.str_vertical .str_move,
+.str_down .str_move {
+	white-space:normal;
+	width:100%;
+}
+.str_wrap img {
+	max-width:none !important;	
+}
+
+/* 下面是时间轴的演示 */
+.gt-timeline{
+	position: relative;
+	width: 960px;
+	height: 120px;
+	border: 0px solid red;
+	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	color: black !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.gt-timeline div.main_line {
+	  	border: none;
+	    border-top:3px solid #666666; 
+	    clear:both; 
+	    height:0; 
+	    width: 100%;
+	    position: absolute;
+	    top:50px;
+	    left: 14px;
+	    z-index: 0;
+	}
+
+	.gt-timeline div.event{
+		background: url(../img/main_img.png) no-repeat 0 -84px;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+		position: absolute;
+		z-index: 2;
+    top: 44px;
+    color:black !important;
+	}
+
+	.gt-timeline div.selected{
+		/*border: 2px dashed #999999;*/
+	}
+	.gt-timeline div.e-message{
+		background-color: #666666;
+		position: absolute;
+		top: 70px;
+		color: white;
+	}
+
+		.gt-timeline div.e-message .msg{
+			width: 300px;
+			padding: 5px;
+			font-size: 12px;
+			text-shadow: 0 0 0;
+			cursor: pointer;
+			z-index: 100;
+			position: relative;
+		}
+
+		.gt-timeline div.e-message .info{
+			padding: 5px;
+			font-size: 11px;
+			text-shadow: 0 0 0;
+			cursor: auto;
+			z-index: 100;
+			position: relative;
+			font-weight: bold;
+			border-bottom: 1px dashed #999999;
+			position: default;
+		}
+
+		.gt-timeline div.e-message .message-pointer{
+			background: url(../img/main_img.png) no-repeat 0 -122px;
+			width: 14px;
+			height: 18px;
+			position: absolute;
+			top: -11px;
+			z-index: 1;
+		}
+		.gt-timeline .icon-close{
+			background: url(../img/main_img.png) no-repeat -3px -227px;
+			background-color: #999999;
+			width: 14px;
+			height: 14px;
+			position: absolute;
+			top: 5px;
+			right: 7px;
+			cursor: pointer;
+		}
+	.gt-timeline div.event:hover{
+		background-position: -27px -84px;
+	}
+
+	.gt-timeline div.horizontal-line{
+		border: 0px;
+	    border-left:3px solid #666666; 
+	    clear:both;
+	    height:20px;
+	    width: 0px;
+		position: absolute;
+		z-index: 1;
+		top: 30px;
+	}
+
+	.gt-timeline div.leftend{
+		left: 14px;
+	}
+	.gt-timeline div.rightend{
+		right: 0;
+	}
+		.gt-timeline .leftend .year{
+			position: relative;
+			text-align: center;
+			top: -30px;
+			left: -15px;
+		}
+		.gt-timeline .leftend .month{
+			position: relative;
+			text-align: center;
+			top: -32px;
+			left: -11px;
+			white-space: nowrap;
+		}
+
+	.gt-timeline div.month-line{
+		height: 15px;
+		border-left: 2px solid #666666;
+	}
+
+	.gt-timeline div.even-month{
+		top:37px;
+	}
+		.gt-timeline div.even-month .month{
+			position: relative;
+			top: -18px;
+			left: -10px;
+			white-space: nowrap;
+		}
+
+	.gt-timeline div.odd-month{
+		top: 41px;
+		height: 10px;
+		border-left: 1px solid #999999;
+	}
+
+	.gt-timeline .year, .gt-timeline .month{
+		font-size: 12px;
+	}
+	.gt-timeline .year{
+		font-weight: bold;
+  }
+  body {
+    color: #444;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px;
+  }
+  h1{
+    text-align: center;
+  }
+  
+  .hl{
+    color: red;
+  }
+  .top-line{
+    margin-top:0px;
+    color:black;
+    border-color:black;
+    border-bottom-width: 0px;
+  }
+  .container{
+    margin-top: 30px;
+  }
+  .inner-wrap{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+    .tabs ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .tabs li{
+      float: left;
+      border: 1px solid #bbb;
+      border-bottom-width: 0;
+      margin: 0;
+    }
+  
+    .tabs li a{
+      text-decoration: none;
+      display: block;
+      background: #eee;
+      padding: 0.24em 1em;
+      color: #00c;
+      width: 8em;
+      text-align: center;
+    }
+  
+    .tabs .selected{
+      border-color: black;
+    }	
+  
+    .tabs .selected a{
+      position: relative;
+      top: 1px;
+      background: white;
+      color: black;
+      font-weight: bold;
+    }
+  
+  
+  .header{
+    text-align: center;
+  }
+    .header h2{
+      color : #aaa;
+    }
+  
+    .demo{
+      position:relative;
+      top:10%;
+      padding-bottom: 10px;
+      padding-top: 34px;
+      background-color: #f5f5f5;
+      border-top: 1px solid #e3e3e3;
+      border-bottom: 1px solid #e3e3e3;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+      opacity: 0.8;
+    }
+  
+  .apiDocTable{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }	
+  #timeline-content{
+    border:1px solid #999999;
+    height:450px;
+    width:100%;
+    background:#f5f5f5;
+    opacity: 0.8;
+    position:absolute;
+    top:29%;
+  }
+  .timeline-content{
+    text-align: center;
+    position:relative;
+    top:10%;
+    left:0%;
+  }
+  .timeline-content h3{
+    /*text-align: center;*/
+  }
+  .timeline-content img{
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .clear:before,
+  .clear:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+  
+  .clear:after {
+      clear: both;
+  }
+  
+  .clear {
+      *zoom: 1;
+  }
+  
+  
+  .button{
+      background: url(../img/buttons.png) no-repeat 0 0;
+      width: 255px;
+      height: 42px;
+      cursor: pointer;
+      display: block;
+  }
+  
+  .button-direct-download{
+    background-position: 0px 0px;
+  }
+  .button-direct-download:hover{
+    background-position: 0px -45px;
+  }
+  .button-github{
+    background-position: 0px -90px;
+  }
+  .button-github:hover{
+    background-position: 0px -135px;
+  }
+  
+  
+  .footer{
+    background-color: #cccccc;
+    min-height: 50px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #999999;
+  }
+  
+  /* Header styling */
+  .top-bar{
+      background-color: #2C3435;
+      height: 40px;
+  }
+  .top-bar a{
+    text-decoration: none;
+  }
+  .top-bar a:hover{
+      background-color: transparent;
+  }
+  
+  .wrap {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+  }  

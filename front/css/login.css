@@ -1,0 +1,87 @@
+*{
+  margin:0;
+  padding:0;
+}
+div#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  zoom: 1;
+  opacity:1;
+  transition: opacity 1s linear;
+}
+#login{
+  position:relative;
+  margin:0 auto;
+  margin-top:100px;
+  width:500px;
+  height:250px;
+  background:white;
+  opacity: .8;
+  border-radius:10px;
+}
+#login>h1{
+  text-align: center;
+  padding-top:10px;
+  padding-bottom:20px;
+}
+.input{
+  width:100%;
+  padding:20px 0;
+}
+.input>label{
+  font-size:26px;
+  font-weight: bold;
+}
+.input>input{
+  width:200px;
+  height:30px;
+  font-size:18px;
+}
+button{
+  width:100%;
+  height:40px;
+  background:linear-gradient(to left, blue 0%,greenyellow 100%);
+  margin-top:20x;
+  border:none;
+  border-radius:10px;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+}
+#login>div:nth-child(3){
+  margin-bottom:10px;
+}
+#login>div:nth-child(3)>a{
+  text-decoration: none;
+  float:right;
+  margin-right:10px;
+  color:black;
+}
+#login>div:nth-child(3)>input{
+  margin-left:10px;
+}
+.login_fail{
+  background-color:red;
+  
+}
+.login_fail,.login_success{
+  display: inline-block;
+  text-align: center;
+  line-height:30px;
+  font-size:18px;
+  color:white;
+  border-radius:10px;
+  width:100px;
+  height:30px;
+}
+.login_success{
+  background:green;
+}

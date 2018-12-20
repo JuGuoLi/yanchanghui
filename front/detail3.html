@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    @keyframes color1{
+      16%{
+        color:orange
+      }
+      32%{
+        color:yellow;
+      }
+      48%{
+        color:green
+      }
+      64%{
+        color:black
+      }
+      80%{
+        color:blue
+      }
+      100%{
+        color:purple
+      }
+    }
+    #detail3>p{
+      font-weight:bold;
+    }
+    #detail3>p:nth-child(1){
+      font-size:24px;
+      color:red;
+      animation: color1 6s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-delay: 1s;
+    }
+    #detail3>p:nth-child(2){
+      font-size:20px;
+      color:orange;
+      animation: color1 6s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-delay: 2s;
+      margin-left:15px;
+    }
+    #detail3>p:nth-child(3){
+      font-size:30px;
+      color:yellow;
+      animation: color1 6s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-delay: 3s;
+      margin-left:25px;
+    }
+    #detail3>p:nth-child(4){
+      font-size:21px;
+      color:green;
+      animation: color1 6s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-delay: 4s;
+      margin-left:35px;
+    }
+    #detail3>p:nth-child(5){
+      font-size:23px;
+      animation: color1 6s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-delay: 5s;
+      margin-left:45px;
+    }
+    #detail3>p:nth-child(6){
+      font-size:25px;color:blue;
+      animation: color1 6s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-delay: 6s;
+      margin-left:55px;
+    }
+    #detail3>p:nth-child(7){
+      font-size:30px;
+      color:pink;
+      margin-left:65px;
+    }
+  </style>
+</head>
+<body>
+  <div id='detail3'>
+    <p>没错！</p>
+    <p>就是我！</p>
+    <p>做不更名，行不改姓，我就是韩栋！</p>
+    <p>这玩意就是我写的</p>
+    <p>自己设计制作的</p>
+    <p>从剪切视频到敲代码都是我做的</p>
+    <p>灰常感谢各位领导来我的小网站</p>
+  </div>
+</body>
+</html>

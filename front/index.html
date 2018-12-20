@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery单页/全屏滚动插件onepage-scroll演示-水平/横向滚动_dowebok</title>
+<link rel="stylesheet" href="css/onepage-scroll.css" />
+<link rel="stylesheet" href="css/index.css">
+<style>
+
+p.title { position: relative; top: 35%; font: 700 40px "Microsoft Yahei"; color: #fff; text-align: center;}
+</style>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery.onepage-scroll.min.js"></script>
+<script src='js/jquery.liMarquee.js'></script>
+<script src='js/jquery.jqtimeline.js'></script>
+</head>
+<body>
+	<div id='bg'></div>
+		<div class="main">
+			<div class="page page1">
+				<div class="video_play">
+					<video autoplay muted>
+						<source src="img/ych_video_02.mp4"/>
+					</video>
+				</div>
+				<div id='index_page1'>
+					<ul>
+						<li><a href="javascript:;"><i>顶尖阵容</i></a></li>
+						<li><a href="javascript:;"><i>往届回顾</i></a></li>
+						<li><a href='javascript:;'><i>关于我们</i></a></li>
+					</ul>
+					<div class='index_div_active hidden'>
+						<iframe class="index_detail hidden" src="detail1.html" frameborder="0"></iframe>
+						<iframe class="index_detail hidden" src="detail2.html" frameborder="0"></iframe>
+						<iframe class='index_detail hidden' src="detail3.html" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="page page2">
+				<div class="dowebok">
+					<a href="">
+						<img src="img/001.jpg" alt="最佳前男友">
+					</a>
+					<a href="">
+						<img src="img/002.jpg" alt="花千骨">
+					</a>
+					<a href="">
+						<img src="img/003.jpg" alt="克拉恋人">
+					</a>
+					<a href="">
+						<img src="img/004.jpg" alt="神犬小七">
+					</a>
+					<a href="">
+						<img src="img/005.jpg" alt="秀才遇到兵">
+					</a>
+					<a href="">
+						<img src="img/006.jpg" alt="暗黑者2">
+					</a>
+					<a href="">
+						<img src="img/007.jpg" alt="二胎时代">
+					</a>
+					<a href="">
+						<img src="img/008.jpg" alt="鸳鸯佩">
+					</a>
+					<a href="">
+						<img src="img/009.jpg" alt="少年神探狄仁杰">
+					</a>
+					<a href="">
+						<img src="img/0010.jpg" alt="华胥引">
+					</a>
+				</div>
+			</div>
+			<div class="page page3">
+					<div class="longDemo demo">
+							<div id="longTimeLine">
+							</div>
+						</div>
+						<div class="inner-wrap">
+							<div id="timeline-content" class="timeline-content" style="">
+								<h3 >
+								<span id="date_123" style="color:red"></span>
+								</h3>
+								<img src="img/1.jpg" style="display:none" />
+							</div>
+						</div>
+			</div>
+			<div class="page page4">
+				<div id='about_us'>
+					<h1>CONTACT US</h1>
+					<h2>联系我们</h2>
+					<p>
+						疯狂音乐节是隶属于韩栋个人项目下的旗下一家专注于提供全球音乐节订制旅行服务的品牌，会员足迹已遍布全球各地。并致力于举办国内电子音乐节和室内Party，以及EDM相关周边产品的售卖和电子音乐文化的推广。
+					</p>
+					<ul>
+						<li>
+							<img src="img/erweima1.jpg" alt="">
+							<h2>加入我们</h2>
+						</li>
+						<li>
+							<img src="img/erweima2.jpg" alt="">
+							<h2>关注公众号
+								<br>
+							了解更多资讯</h2>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<script src='js/index.js'></script>
+</body>
+</html>
